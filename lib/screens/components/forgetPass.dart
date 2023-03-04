@@ -14,7 +14,7 @@ class CreateANewPassword extends StatelessWidget {
      
 
 
-      SizedBox(height: 360,
+      SizedBox(height: MediaQuery.of(context).size.height*0.5,
       
       child: Row(children: [
         Expanded(child: Padding(padding: const EdgeInsets.symmetric(vertical: kDefaultPadding*2),

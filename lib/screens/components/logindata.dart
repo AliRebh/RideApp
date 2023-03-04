@@ -1,4 +1,5 @@
 import 'package:easyrideapp/constants.dart';
+import 'package:easyrideapp/screens/homeScreen.dart';
 import 'package:easyrideapp/screens/passwordreset.dart';
 import 'package:easyrideapp/screens/singup.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +16,7 @@ class loginData extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 30,),
       child: Column(children: [
         
-      SizedBox(height: 300,),
+      SizedBox(height: MediaQuery.of(context).size.height*0.42,),
         TextField(
           
           decoration: InputDecoration(
@@ -69,7 +70,10 @@ class loginData extends StatelessWidget {
           ),
           
           onPressed: (){
-            print(MediaQuery.of(context).size.width);
+            Navigator.push(
+    context,
+    MaterialPageRoute(builder: (context) => const homePage()),
+  );
 
         }),
         SizedBox(height: 10,),

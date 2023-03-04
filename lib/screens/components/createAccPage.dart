@@ -12,7 +12,7 @@ class CreateANewAccount extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 30,),
       child: Column(children: [
         
-      SizedBox(height: 300,
+      SizedBox(height: MediaQuery.of(context).size.height*0.42,
       child: Row(children: [
         Expanded(child: Padding(padding: const EdgeInsets.symmetric(vertical: kDefaultPadding*2),
         
