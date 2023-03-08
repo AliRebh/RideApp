@@ -10,7 +10,7 @@ class BottomNavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       
-      height: 80,
+      height: 50,
       decoration: BoxDecoration(
         color: Colors.white,
         boxShadow: [BoxShadow(offset: Offset(0,-10),
@@ -21,13 +21,13 @@ class BottomNavBar extends StatelessWidget {
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [IconButton(onPressed: null, icon: Icon(Icons.home_rounded, color: kPrimaryColor,
+          children: [IconButton(onPressed: null, icon: Icon(Icons.notifications_rounded, color: kPrimaryColor,
           ),
           ),
-          IconButton(onPressed: null, icon: Icon(Icons.favorite, color: kPrimaryColor,
-          )
-          ),
-          IconButton(onPressed: null, icon: Icon(Icons.person, color: kPrimaryColor,
+          // IconButton(onPressed: null, icon: Icon(Icons.favorite_rounded, color: kPrimaryColor,
+          // )
+          // ),
+          IconButton(onPressed: null, icon: Icon(Icons.person_rounded, color: kPrimaryColor,
           )
           ),
           ],
