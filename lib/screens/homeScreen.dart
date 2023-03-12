@@ -1,4 +1,5 @@
 import 'package:easyrideapp/components/bottom_nav_bar.dart';
+import 'package:easyrideapp/components/navBar.dart';
 import 'package:flutter/material.dart';
 import 'package:easyrideapp/constants.dart';
 
@@ -14,6 +15,7 @@ class _homePageState extends State<homePage> {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
+      drawer: navBar(),
       appBar: buildAppBar(),
       bottomNavigationBar: BottomNavBar(),
       body: SingleChildScrollView(
@@ -59,14 +61,15 @@ class _homePageState extends State<homePage> {
   AppBar buildAppBar(){
     return AppBar(
      backgroundColor: kPrimaryColor,
+        
         elevation: 0,
-        leading: IconButton(icon: Icon(Icons.menu_rounded), 
-        onPressed: () {  },
-        ),
+       // leading: IconButton(icon: Icon(Icons.menu_rounded), 
+        //onPressed: () {  },
+        //),
         actions: [
-          IconButton(onPressed: (){}, icon: Image.asset("assets/images/tempIcon.png"))
+          IconButton(onPressed: (){}, icon: Image.asset("assets/images/tempIcon.png"), padding: EdgeInsets.only(right: 10),)
         ],
-    
+
     );
   }
 
